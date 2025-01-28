@@ -10,7 +10,7 @@ import { CTA } from "./index"
 
 const About = () => {
   return (
-    <section>
+    <section id="about-us">
       <div className="relative z-20 bg-[#EEF1F840] bg-opacity-40 md:py-[60px] py-[50px]">
         <Image
           src={Avocado}

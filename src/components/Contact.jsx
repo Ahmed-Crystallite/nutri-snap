@@ -6,7 +6,7 @@ import { FrontEndForm } from "./index"
 import Nutrion from "media/home/nutrion-right.png"
 const Contact = () => {
   return (
-    <section>
+    <section id="contact-us">
       <div className="relative z-20 -mt-[180px] bg-[#f7f7f7] md:pt-[300px] pt-[250px] pb-[40px]">
         <Image
           src={Nutrion}

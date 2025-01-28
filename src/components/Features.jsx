@@ -6,7 +6,7 @@ import Bottle from "media/home/bottle.png"
 
 const Features = () => {
   return (
-    <section>
+    <section id="features">
       <div className="relative z-10 bg-white lg:py-[100px] md:py-[80px] py-[50px]">
         <Image
           src={Bottle}

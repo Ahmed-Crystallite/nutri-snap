@@ -56,7 +56,7 @@ const Header = () => {
                   ["#", "Home"],
                   ["#about-us", "About"],
                   ["#features", "Features"],
-                  ["#contact", "Contact us"],
+                  ["#contact-us", "Contact us"],
                 ].map(([link, text], i) => (
                   <Link
                     key={i}

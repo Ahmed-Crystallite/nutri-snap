@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="[scroll-behavior:_smooth]">
       <body
         className={`${fontSans.variable} ${fontMono.variable} antialiased font-sans font-normal text-text_color`}
       >
