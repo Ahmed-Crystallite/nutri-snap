@@ -62,12 +62,12 @@ const Header = () => {
                     key={i}
                     href={link}
                     onClick={() => setOpenIndex(false)}
-                    className="relative text-black overflow-hidden w-max block md:mb-0 group mb-5 transition-all ease-in-out duration-500"
+                    className="relative md:text-black text-white overflow-hidden w-max block md:mb-0 group mb-5 transition-all ease-in-out duration-500"
                   >
                     <span className="text-[18px] transition-all ease-in-out duration-500 leading-tight font-semibold">
                       {text}
                     </span>
-                    <span className="block rounded-full transition-all ease-in-out duration-500 bottom-0 absolute w-full group-hover:translate-x-0 -translate-x-full h-[2px] bg-black"></span>
+                    <span className="block rounded-full transition-all ease-in-out duration-500 bottom-0 absolute w-full group-hover:translate-x-0 -translate-x-full h-[2px] md:bg-black bg-white"></span>
                   </Link>
                 ))}
               </div>
