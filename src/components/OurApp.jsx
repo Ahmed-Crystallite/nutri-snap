@@ -9,13 +9,20 @@ import {
   TabsTrigger,
 } from "./index"
 // Media
-import ScreenShot1 from "media/screenshots/guardian/1.png"
-import ScreenShot2 from "media/screenshots/guardian/2.png"
-import ScreenShot3 from "media/screenshots/guardian/3.png"
-import ScreenShot4 from "media/screenshots/guardian/4.png"
-import ScreenShot5 from "media/screenshots/guardian/5.png"
-import ScreenShot6 from "media/screenshots/guardian/6.png"
-import ScreenShot7 from "media/screenshots/guardian/7.png"
+import ScreenShot1 from "media/screenshots/user/1.png"
+import ScreenShot2 from "media/screenshots/user/2.png"
+import ScreenShot3 from "media/screenshots/user/3.png"
+import ScreenShot4 from "media/screenshots/user/4.png"
+import ScreenShot5 from "media/screenshots/user/5.png"
+import ScreenShot6 from "media/screenshots/user/6.png"
+import ScreenShot7 from "media/screenshots/user/7.png"
+import ScreenShot8 from "media/screenshots/nutritionist/1.png"
+import ScreenShot9 from "media/screenshots/nutritionist/2.png"
+import ScreenShot10 from "media/screenshots/nutritionist/3.png"
+import ScreenShot11 from "media/screenshots/nutritionist/4.png"
+import ScreenShot12 from "media/screenshots/nutritionist/5.png"
+import ScreenShot13 from "media/screenshots/nutritionist/6.png"
+import ScreenShot14 from "media/screenshots/nutritionist/7.png"
 
 const OurApp = () => {
   return (
@@ -47,13 +54,12 @@ const OurApp = () => {
               >
                 {[
                   ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
+                  ScreenShot2,
+                  ScreenShot3,
+                  ScreenShot4,
+                  ScreenShot5,
+                  ScreenShot6,
+                  ScreenShot7,
                 ].map((e, i) => (
                   <div
                     key={i}
@@ -62,7 +68,7 @@ const OurApp = () => {
                     <Image
                       src={e}
                       alt="screenshots"
-                      className="m-auto sm:w-max sm:h-max w-[50%] h-[50%]"
+                      className="m-auto sm:w-full sm:h-full w-[50%] h-[50%]"
                     />
                   </div>
                 ))}
@@ -76,14 +82,13 @@ const OurApp = () => {
                 screen={true}
               >
                 {[
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
-                  ScreenShot1,
+                  ScreenShot8,
+                  ScreenShot9,
+                  ScreenShot10,
+                  ScreenShot11,
+                  ScreenShot12,
+                  ScreenShot13,
+                  ScreenShot14,
                 ].map((e, i) => (
                   <div
                     key={i}
@@ -92,7 +97,7 @@ const OurApp = () => {
                     <Image
                       src={e}
                       alt="screenshots"
-                      className="m-auto sm:w-max sm:h-max w-[50%] h-[50%]"
+                      className="m-auto sm:w-full sm:h-full w-[50%] h-[50%]"
                     />
                   </div>
                 ))}

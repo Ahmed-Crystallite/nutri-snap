@@ -4,6 +4,8 @@
 
 .__ourApp .is-in-view img {
   transform: scale(0.9);
+  filter: drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
 }
 .__ourApp .is-snapped img {
   transform: scale(1);

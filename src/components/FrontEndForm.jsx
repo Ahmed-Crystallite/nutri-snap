@@ -17,6 +17,7 @@ import {
   Textarea,
   FormLabel,
 } from "./index"
+import { useRouter } from "next/navigation"
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -42,8 +43,9 @@ const formSchema = z.object({
   message: z.string(),
 })
 
-const FrontEndForm = ({ label = true,css }) => {
+const FrontEndForm = ({ label = true, css }) => {
   const [loading, setLoading] = useState(false)
+  const router = useRouter()
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -55,17 +57,24 @@ const FrontEndForm = ({ label = true,css }) => {
   })
   const handleSubmit = async (values) => {
     setLoading(true)
-    const filteredValues = Object.entries(values).reduce(
-      (acc, [key, value]) => {
-        if (value !== "" && value !== false) {
-          acc[key] = value
-        }
-        return acc
-      },
-      {}
-    )
+    try {
+      const response = await fetch("/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
 
-    console.log(filteredValues)
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+      router.push("/thank-you")
+    } catch (error) {
+      console.error("Error:", error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (

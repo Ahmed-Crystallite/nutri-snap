@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="relative z-10 bg-[#191931]">
         <div className="container">
           <div className="py-[40px] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-5 gap-x-5">
-            <div className="">
+            <Link href="/">
               <Image src={Logo} priority alt="footer_logo" />
-            </div>
+            </Link>
             <div className="grid grid-cols-2 gap-x-5 gap-y-5">
               <div>
                 <h4 className="text-primary text-[15px] leading-tight font-bold mb-4">
